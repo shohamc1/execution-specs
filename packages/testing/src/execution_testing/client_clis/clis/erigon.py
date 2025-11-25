@@ -55,4 +55,7 @@ class ErigonExceptionMapper(ExceptionMapper):
         BlockException.INCORRECT_EXCESS_BLOB_GAS: r"invalid excessBlobGas: have \d+, want \d+",
         BlockException.INVALID_GAS_USED: r"gas used by execution: \w+, in header: \w+",
         BlockException.INVALID_GAS_USED_ABOVE_LIMIT: r"invalid gasUsed: have \d+, gasLimit \d+",
+        BlockException.INVALID_BLOCK_ACCESS_LIST: (
+            r"invalid block access list|block access list mismatch"
+        ),
     }
